@@ -8,15 +8,16 @@ extends Control
     $HBoxContainer/Slot5
 ]
 
-var slot_keys := ["wood", "", "", "", ""] # slot 1 mostra madeira
+# Slot 1 mostra madeira, Slot 2 mostra o machado
+var slot_keys: Array[String] = ["wood", "axe", "", "", ""]
 
 func _ready() -> void:
     Inventory.updated.connect(_refresh)
     _refresh()
 
 func _refresh() -> void:
-    for i in slot_labels.size():
-        var key := slot_keys[i]
+    for i in range(slot_labels.size()):
+        var key: String = slot_keys[i]
         if key == "":
             slot_labels[i].text = "[vazio]"
         else:

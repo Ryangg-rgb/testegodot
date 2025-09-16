@@ -5,7 +5,7 @@ Este projeto contém:
 - Player 2D com movimento (A/D ou setas), pulo (Espaço/W/Seta ↑)
 - Interação (E)
 - Árvore derrubável que dá `wood` no inventário
-- Inventário básico (HUD com 5 slots; 1º mostra `wood`)
+- Inventário básico (HUD com 5 slots; 1º mostra `wood` e 2º mostra `axe`)
 
 ## Como rodar
 1. Abra no Godot 4.4.1
@@ -23,9 +23,9 @@ Este projeto contém:
 - `scenes/Tree.tscn`: árvore com HP e drop de madeira
 - `scripts/player.gd`: movimentação e interação
 - `scripts/tree.gd`: lógica de HP/queda/drop
-- `scripts/inventory.gd`: inventário global (autoload)
+- `scripts/inventory.gd`: inventário global (autoload) com item inicial `axe`
 - `scripts/globals.gd`: cria mapeamentos de input (A/D/Space/E) se faltarem
-- `scripts/inventory_ui.gd`: atualiza HUD
+- `scripts/inventory_ui.gd`: atualiza HUD e mostra `wood` e `axe`
 
 ## Próximos passos (opcionais)
 - Sprites/tiles próprios (atual agora é só placeholder)
