@@ -1,0 +1,11 @@
+# Godot 4
+.godot/
+# Godot 3 legacy
+.import/
+
+# Exports / builds
+bin/
+
+# OS / editor
+.DS_Store
+Thumbs.db
